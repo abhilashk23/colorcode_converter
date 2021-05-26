@@ -1,4 +1,4 @@
-//Function to convert hex format to a rgb color
+//Function to convertrgb to hex
 var hexf = document.getElementById("hex");
 var rgbf = document.getElementById("rgb");
 
@@ -10,6 +10,7 @@ function rgb2hex(rgb) {
         ("0" + parseInt(rgb[3], 10).toString(16)).slice(-2) : '';
 }
 
+//Function to convert hex format to a rgb color
 function hexToRgb(hex) {
     var result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
     return result ? {
